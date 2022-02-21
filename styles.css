@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,100;1,400&display=swap');
+:root{
+    font-size: 62.5%;
+    font-family: Roboto,sans-serif;
+}
+@font-face {
+    font-family: cs;
+    src: url(./resources/Arcade.ttf);
+  }
+.page-wrapper{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    color:white;
+
+    height: 100vh;
+    background-color: #021126;
+}
+
+
+
+.container-flex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+
+
+.image-container{
+    display: flex;
+    flex:1 1 0;
+    overflow: hidden;
+    justify-content: center;
+}
+.jijo{
+    overflow:hidden;
+    top:20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color:white;
+    align-items: center;
+}
+.logo-texto{
+    margin: 5px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: cs;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    display: block;
+
+    filter:invert(1);
+}
+.image-container > .bg{
+    object-fit: cover;
+    min-width:100%;
+    max-height:100%;
+}
+
+
+.form-container{
+    flex:4 1 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.introduction{
+    flex:1;
+    padding:30px 50px 15px 50px;
+}
+.introduction :first-child{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.introduction :first-child+p{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight:lighter;
+}
+
+
+.formulario{
+    flex:2;
+    padding:15px 50px 75px 50px;
+    font-size:1.5rem ;
+    display:flex;
+    align-self: stretch;
+    background-color: #101a22;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+.formulario textarea{
+    display:block;
+    resize: none;
+    margin-bottom: 15px;
+    
+}
+.form-flex{
+    flex:1 1 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.campo-largo{
+    width: 30ch;
+}
+.form-col2{
+    align-items: flex-end;
+}
+.checklist{
+    display:flex;
+    flex:1 1 auto;
+    align-items: flex-end;
+    gap: 10px;
+}
+.input-1{
+    display: flex;
+    flex-direction: column;
+    flex:20;
+    justify-content: space-between;
+}
+.checklist-row1,.checklist-row2{
+    flex-direction: column;
+    align-items: center;
+    display:flex;
+    flex:1;
+}
+.relleno{
+    flex:9;
+}
+.checklist-row2{
+    flex:1;
+}
+.form-col1,.form-col2{
+    flex:1 1 auto;
+
+    justify-content: stretch;
+
+    display:flex;
+    flex-direction: column;
+}
+
+.boton-sub{
+    width: 100%;
+    display:flex;
+    flex:1 1 auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+.submit-btn{
+    padding: 10px 25px;
+    margin-right: 65px;
+}
+.input-2{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    justify-content: space-between;
+}
+
+input:invalid{
+    background-color: red;
+}
+

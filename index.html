@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="page-wrapper">
+        <div class="container-flex">
+            <div class="image-container">
+                <div class="jijo">
+                    <img class="logo "src="./resources/logo.png" alt="logo">
+                    <p class="logo-texto">CS COMPUTACION</p>
+                </div>
+                <img class="bg"src="./resources/computacion.png" alt="A bunch of leafs">
+
+            </div>
+
+
+            <div class="form-container">
+
+                <div class="introduction">
+                    <p>Asi que quieres aplicar a CS Computacion?</p>
+                    <p>Pues primero tendras que demostrarnos que tienes los conocimientos necesarios!<br>
+                        Dinos las cosas que te interesan y por que deberiamos contratarte, luego rellena
+                        el formulario con tus datos y envialo</p>
+                </div>
+
+                <div class="formulario">
+                    <section>
+                        <form action="">
+                            <label for="motivos"></label>
+                            <textarea placeholder="Por que quieres trabajar con nosotros?"name="motivos" id="motivos" cols="80" rows="5"></textarea>
+
+                            <div class="form-flex">
+                                <div class="form-col1">
+                                    <div class="input-1">
+                                        <label for="nombre"></label>
+                                        <input placeholder="Nombre Completo" class="campo-largo" name="nombre" type="text" required>
+
+                                        <label for="contrasenia"></label>
+                                        <input placeholder="Contrasenia" class="campo-largo" name="contrasenia"type="password" required>
+                                        <p>Cual de los siguientes temas de <br>
+                                            computacion  te interesa mas</p>
+                                    </div>
+                                   
+                                    <div class="checklist">
+                                        <div class="checklist-row1">
+                                            <input type="radio" name="preferencia" value="first_checkbox" required> <label for="cbox1">Hardware</label>
+                                            <input type="radio" name="preferencia" value="second_checkbox"> <label for="cbox2">Software</label>
+
+                                        </div>
+                                        <div class="checklist-row2">
+                                            <input type="radio" name="preferencia" value="third_checkbox"> <label for="cbox4">Gaming</label>
+                                            <input type="radio" name="preferencia" value="fourth_checkbox"> <label for="cbox3">Disenio</label>
+                                        </div>
+                                        <div class="relleno"></div>
+
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-col2">
+                                    <div class="input-2">
+                                        <label for="nacimiento"></label>  
+                                        <input placeholder="Nacimiento" class="campo-largo" name="nacimiento" type="date" max="2022-01-01"required>
+                                        <label for="confirmpass"></label>
+                                        <input placeholder="Confirmar contrasenia" class="campo-largo" name="confirmpass"type="password"required>
+                                        <label for="cell"></label>
+                                        <input placeholder="Celular(formato: xxxx-xxxxxx)" class="campo-largo" name="cell"type="tel"pattern="[0-9]{4}-[0-9]{6}"required>
+                                        <label for="email"></label>
+                                        <input placeholder="Email" class="campo-largo" name="email"type="email" required>
+                                    </div>
+                                    <div class="boton-sub">
+                                        <input class="submit-btn"type="button" value="Submit">
+                                    </div>
+                                    <div></div>
+                                </div>
+                            
+                            
+                        </div>
+
+
+                        </form>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
